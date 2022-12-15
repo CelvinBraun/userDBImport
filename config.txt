@@ -1,0 +1,12 @@
+[Path of Excel file]:
+UserImport.xlsx
+[SQL Driver]:
+{SQL Server}
+[SQL-Server and Instance]:
+(local)\SQL19
+[SQL Database]:
+DEMO
+[SQL User]:
+sa
+[Create Log File]:
+True
