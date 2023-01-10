@@ -14,7 +14,6 @@ for line in configFilePath:
     stringNoNewLine.append(line.replace("\n", ""))
 
 password = os.environ.get('dbUserPassword')
-
 # build string for database connection
 conn_str = "DRIVER=" + stringNoNewLine[3] + ";" + "SERVER=" + stringNoNewLine[5] + ";" + "DATABASE=" \
            + stringNoNewLine[7] + ";" + "USERNAME=" + stringNoNewLine[9] \
@@ -150,3 +149,5 @@ if checkIfFileExists(stringNoNewLine[1]):
         createLog(gotImported)
     # delete Excel file
     deleteExcelFile(stringNoNewLine[1])
+
+time.sleep(15)
